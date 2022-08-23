@@ -1,0 +1,75 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                /* background: #0c2835; */
+                background-color: rgb(104, 104, 168);
+            }
+            
+            .calculator {
+                position: relative;
+                display: grid;
+            }
+            
+            form {
+                /* border: 2px solid red; */
+                box-shadow: 0 4px 8px 0;
+            }
+            /* body {
+                box-shadow: 0 4px 8px 0;
+            } */
+            
+            .value {
+                grid-column: span 4;
+                height: 100px;
+                text-align: right;
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-size: 18px;
+            }
+            
+            span {
+                display: grid;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                background: rgb(252, 45, 45);
+                place-items: center;
+                border: 1px solid rgba(0, 0, 0, .1);
+            }
+            
+            span:hover {
+                background: yellowgreen;
+                /* background-color: #272727; */
+                color: #111;
+            }
+            
+            span.clear:hover {
+                background: rgb(252, 45, 45);
+            }
+            
+            span.clear {
+                grid-column: span 2;
+                width: 120px;
+                background: #0c2835;
+            }
+            
+            span.plus {
+                grid-row: span 2;
+                height: 120px;
+            }
+            
+            span.equal {
+                /* background: orange; */
+                grid-column: span 2;
+                width: 120px;
+            }
